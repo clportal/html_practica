@@ -6,11 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CULTURA COREANA</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: rgba(253, 149, 63, 0.925);
+        }
+        .main_row{
+            display: flex;
+        }
+        .main_column{
+            padding:10px;
+        }
+    </style>
 </head>
 <body>
-    <div class="header" style="background-color: aquamarine"> <!--escribir .header+.main y presionar enter-->
-        <h1>Cultura de Corea del Sur</h1>
-        <h6>Suscriptores: 68MIL</h6>
+    <div class="header" style="background-color:rgb(121, 243, 117)"> <!--escribir .header+.main y presionar enter-->
+        <h1 style="margin-bottom: 0">Cultura de Corea del Sur</h1>
+        <h6 style="margin-top: 0">Suscriptores: 68MIL</h6>
         <table>
             <tr>
                 <th>
@@ -51,6 +63,35 @@
             </tr>
         </table>
     </div>
-    <div class="main"></div>
+    <div class="main"></div> <!--.main_row*2>.main_column*2 -->
+    <div class="main_row">
+        <div class="main_column"></div>
+        <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/2BcJdu490Ro" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen
+        ></iframe>
+        <div class="main_column">
+            <h3>Video 1</h3>
+            <p>Gracias</p>
+        </div>
+    </div>
+    <div class="main_row">
+        <div class="main_column"></div>
+        <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/FxInQ95Afmo" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+        ></iframe>
+        <div class="main_column">
+            <h3>Video 2</h3>
+            <p>Gracias</p> 
+        </div>
+    </div>
 </body>
 </html>
